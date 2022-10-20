@@ -6,9 +6,7 @@ const SSRPage = ({ serverData }) => (
     <img alt="Happy dog" src={serverData.message} />
   </main>
 )
-
 export default SSRPage
-
 export async function getServerData() {
   try {
     const res = await fetch(`https://dog.ceo/api/breeds/image/random`)
